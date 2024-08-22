@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('fundoroxo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    margin: 0;
+    color: #8000ff;
+
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    transition: 0.8s;
+}
+
+.navigation a:hover {
+    color: #8000ff;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.3s, border 0.3s;
+}
+
+.pudim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    background-color: rgba(92, 55, 109, 0.8);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 24px;
+    transition: 0.3s ease, 0.3s ease;
+}
+
+.pudim h2 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0c0c0c;
+    margin-bottom: 10px;
+
+}
+
+.pudim:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.form input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease, 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #8000ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 0, 255, 0.3);
+}
+
+.form input[type="submit"] {
+    background-color: #8000ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #6600cc;
+}
+
+.create-account {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.create-account p {
+    color: #1b1b1b;
+    font-weight: 500;
+    margin: 0;
+
+    transition: color 0.3s ease;
+}
+
+.create-account p a {
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+.create-account p a:hover {
+    color: #39254e;
+}
